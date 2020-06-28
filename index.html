@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>iTunes Music</title>
+   <link rel="stylesheet" href="src/css/style.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="src/js/app.js"></script>
+</head>
+
+<body>
+   <header>
+      <div>
+         <div class="bg__search">
+            <p>search</p>
+         </div>
+         <h1 data-header="search">iTunes</h1>
+      </div>
+
+      <div class="tab__menu">
+         <label for="checksearch" class="btn__search" id="active-search"></label>
+         <label for="checkfav" class="btn__fav"></label>
+      </div>
+      <input type="checkbox" name="" id="checksearch" class="checkmenu check__hide">
+      <input type="checkbox" name="" id="checkfav" class="check__hide" checked>
+      <div class="search" tabindex="0">
+         <div class="search__form">
+            <div class="input__container">
+               <label for="select-type">Type</label>
+               <select class="search__select" id="select-type">
+                  <option value="song" selected>Song</option>
+                  <option value="musicArtist">Artist</option>
+                  <option value="album">Album</option>
+                  <option value="musicVideo">Music Video</option>
+               </select>
+            </div>
+            <div class="input__container">
+               <label for="input-search">Search</label>
+               <input class="search__song" type="search" id="input-search" placeholder="Search something...">
+            </div>
+
+            <div class="input__container">
+               <input type="checkbox" class="check__hide" id="checkbox__country">
+               <label for="checkbox__country">Country
+                  <span class="switch"></span>
+               </label>
+               <label class="ldisabled">
+                  <input type="text" class="select__country" id="input-country" list="countries">
+               </label>
+               <datalist id="countries">
+               </datalist>
+            </div>
+            <div class="input__container">
+               <input type="checkbox" class="check__hide" id="checkbox__explicit">
+               <label for="checkbox__explicit">Explicit Content
+                  <span class="switch"></span>
+               </label>
+               <label class="ldisabled">
+                  <select id="select-explicit" class="select__explicit">
+                     <option value="yes">Yes</option>
+                     <option value="no">No</option>
+                  </select>
+               </label>
+            </div>
+            <div class="input__container">
+               <input type="checkbox" class="check__hide" id="checkbox__limit">
+               <label for="checkbox__limit">Limit
+                  <span class="switch"></span>
+               </label>
+
+               <label class="ldisabled">
+                  <input type="number" id="select-limit" min="1" max="200" value="50" class="select__limit">
+               </label>
+            </div>
+            <div class="input__container">
+               <div class="btn">Press Enter to search and close</div>
+            </div>
+         </div>
+      </div>
+      </div>
+   </header>
+   <main>
+      <div class="results" id="results"></div>
+   </main>
+</body>
+
+</html>
