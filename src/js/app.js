@@ -80,8 +80,6 @@ $(function () {
                   return
                } else {
                   $.each(data.results, function (key, result) {
-                     console.log(result);
-                     
                      cards.createCard(result)
                   })
                }
