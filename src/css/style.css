@@ -144,12 +144,12 @@ a:visited {
 
 .btn__search,
 .btn__fav {
-   background: url(/src/img/search.png) no-repeat;
+   background: url("../img/search.png") no-repeat;
    background-size: 100%;
 }
 
 .btn__fav {
-   background: url(/src/img/fav.png) no-repeat;
+   background: url("../img/fav.png") no-repeat;
    background-size: 90%;
    background-position: 50% 50%;
 }
@@ -409,7 +409,7 @@ video {
    width: 100%;
    height: 100%;
    opacity: .7;
-   background: url(/src/img/play.png) no-repeat 50% 50%;
+   background: url("../img/play.png") no-repeat 50% 50%;
    cursor: pointer;
 }
 
